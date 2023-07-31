@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <%-include('header.ejs', {info: std[0].id})%>
+    <h1>students ejs file</h1>
+    <ul>
+        <%for(i in std){%>
+        <li><%=std[i].name%></li>
+        <%}%>
+        <!-- <li><%=i.name%></li> -->
+    </ul>
+    <%-include('footer.ejs')%>
+</body>
+</html>
