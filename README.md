@@ -60,22 +60,22 @@ Before running the application, ensure that you have a MongoDB instance running 
 
   2. API Endpoints:
      
-  - Create Student: POST /api/students
+  - Create Student: POST `/api/students`
     - Request body: { "name": "Student Name", "id": 1 }
   
-  - Fetch All Students: GET /api/students
+  - Fetch All Students: GET `/api/students`
   
-  - Get Student by ID: GET /api/students/:id
+  - Get Student by ID: GET `/api/students/:id`
   
-  - Update Student: PUT /api/students/:id
+  - Update Student: PUT `/api/students/:id`
     - Request body: { "name": "Updated Name" }
   
-  - Delete Student: DELETE /api/students/:id
+  - Delete Student: DELETE `/api/students/:id`
   
-  - User Registration: POST /api/users
+  - User Registration: POST `/api/users`
     - Request body: { "name": "User Name", "email": "user@example.com", "password": "password" }
   
-  - User Login: POST /api/login
+  - User Login: POST `/api/login`
     - Request body: { "email": "user@example.com", "password": "password" }
     - Response: Returns a JWT token for authenticated requests.
 
